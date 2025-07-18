@@ -2,8 +2,8 @@
 
 export default function Home() {
   return (
-    <main className="flex-1 flex flex-col items-center">
-      <div className="h-[64vh] flex flex-col items-center  justify-center gap-4">
+    <main className="flex-1 flex flex-col items-center p-4">
+      <div className="h-[54vh] flex flex-col items-center justify-center gap-4">
         {/* Add your home page content here */}
         <div className="flex items-center justify-center text-4xl text-white font-bold  ">
           Buy Me A Chai!
@@ -94,12 +94,13 @@ export default function Home() {
           <iframe
             width="560"
             height="315"
+            className="md:w-[560px] md:h-[315px] w-full h-[200px]"
             src="https://www.youtube.com/embed/AbkEmIgJMcU?si=AXZRnfkudd6K6bi6"
             title="YouTube video player"
-            frameborder="0"
+            frameBorder="0"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            referrerpolicy="strict-origin-when-cross-origin"
-            allowfullscreen
+            referrerPolicy="strict-origin-when-cross-origin"
+            allowFullScreen
           ></iframe>
         </div>
       </div>
