@@ -21,7 +21,7 @@ function UserPage({ params }) {
       </div>
 
       <div className="info flex flex-col gap-2 px-2 md:px-0 mt-24 mb-12 text-center">
-        <h2 className="font-bold text-4xl">{params.username}</h2>
+        <h2 className="font-bold text-4xl">@{params.username}</h2>
         <p className="text-xl">Creating Animated art for VTT's</p>
         <p className="text-slate-400">
           19,002 members . 100 Posts . $18,310/release
