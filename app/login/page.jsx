@@ -1,8 +1,16 @@
 "use client"
 import React from "react";
 import { useSession, signIn, signOut } from "next-auth/react"
+import { useRouter } from "next/navigation";
 
 function LoginPage() {
+  const {data: session} = useSession();
+  const router =  useRouter();
+
+  if(session) {
+   router.push(`/${session.user.name}`);
+  }
+
   return (
 
       <div className="flex-1 flex flex-col items-center  gap-2  p-10">
@@ -19,9 +27,9 @@ function LoginPage() {
             <g
               id="Icons"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g id="Color-" transform="translate(-401.000000, -860.000000)">
                 <g id="Google" transform="translate(401.000000, 860.000000)">
@@ -71,9 +79,9 @@ function LoginPage() {
             <g
               id="Icons"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="Color-"
@@ -101,9 +109,9 @@ function LoginPage() {
             <g
               id="Icons"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="Color-"
@@ -132,9 +140,9 @@ function LoginPage() {
             <g
               id="Icons"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="Color-"
@@ -163,19 +171,19 @@ function LoginPage() {
             <g
               id="team-collaboration/version-control/github"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="container"
                 transform="translate(2.000000, 2.000000)"
-                fill-rule="nonzero"
+                fillRule="nonzero"
               >
                 <rect
                   id="mask"
                   stroke="#000000"
-                  stroke-width="2"
+                  strokeWidth="2"
                   fill="#000000"
                   x="-1"
                   y="-1"
@@ -206,9 +214,9 @@ function LoginPage() {
             <g
               id="Page-1"
               stroke="none"
-              stroke-width="1"
+              strokeWidth="1"
               fill="none"
-              fill-rule="evenodd"
+              fillRule="evenodd"
             >
               <g
                 id="Dribbble-Light-Preview"

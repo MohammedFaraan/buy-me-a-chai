@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
       >
         <AuthSessionWrapper>
           <Navbar />
-          {children}
+          <div className="flex-1">
+            {children}
+          </div>
           <Footer />
         </AuthSessionWrapper>
       </body>
